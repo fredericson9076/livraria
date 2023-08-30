@@ -8,34 +8,48 @@
 }
 
 body {
-    font-family: Arial, sans-serif; /* Define a fonte padrão */
-    background-color: #f0f0f0; /* Define a cor de fundo */
+    font-family:'Courier Prime', monospace; /* Define a fonte padrão */
+    background-color:lemonchiffon /* Define a cor de fundo */
 }
 
 header {
-    background-color: #333; /* Define a cor de fundo */
-    color: #fff; /* Define a cor do texto */
+    background-color: #170558; /* Define a cor de fundo */
+    color: #b786f3; /* Define a cor do texto */
     text-align: center; /* Centraliza o texto */
     padding: 1rem; /* Define um espaçamento interno */
 }
 
 nav ul {
     list-style: none; /* Remove a bolinha da lista */
+    color: #b786f3;
 }
+
 
 nav li {
     display: inline; /* Faz com que os itens da lista fiquem na mesma linha */
-    margin-right: 20px; /* Define um espaçamento entre os itens */
+    margin-right: 30px; /* Define um espaçamento entre os itens */
+    margin-left: 10px;
+    color: #b786f3; 
+    
 }
 
 nav a {
     text-decoration: none; /* Remove o sublinhado dos links */
-    color: #fff; /* Define a cor do texto */
-    font-weight: bold; /* Define o peso da fonte */
+    color: #b786f3; /* Define a cor do texto */
+    font-weight:bold ; /* Define o peso da fonte */
 }
 
+header li:hover {
+    background-color: #282046;
+    border-radius: 6px;
+    border-width: 5px;
+    transition: 0.5s;
+    padding: 6px;
+}
+
+
 main {
-    padding: 20px; /* Define um espaçamento interno */
+    padding: 40px; /* Define um espaçamento interno */
     overflow: hidden; /* Faz com que o elemento não ultrapasse o tamanho do pai */
 }
 
@@ -43,7 +57,7 @@ main {
     width: calc(33.33% - 20px); /* 33.33% - 40px */
     margin: 10px; /* Define um espaçamento externo */
     padding: 20px; /* Define um espaçamento interno */
-    background-color: #fff; /* Define a cor de fundo */
+    background-color: #ad9ac2; /* Define a cor de fundo */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra */
     text-align: center; /* Centraliza o texto */
     float: left; /* Faz com que os elementos fiquem na mesma linha */
@@ -51,7 +65,8 @@ main {
 
 .card img {
     max-width: 100%; /* Define a largura máxima da imagem */
-    height: 300px; /* Define a altura da imagem */
+    height: 340px; /* Define a altura da imagem */
+    margin-bottom: 15px;
 }
 
 .card button {
@@ -59,7 +74,7 @@ main {
     color: #fff;
     border: none;
     padding: 8px 16px;
-    margin-top: 10px;
+    margin-top: 20px;
     cursor: pointer; /* Muda o cursor do mouse */
     transition: background-color 0.3s ease; /* Adiciona uma transição suave */
 }
@@ -73,4 +88,16 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px); /* 50% - 40px */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
 }

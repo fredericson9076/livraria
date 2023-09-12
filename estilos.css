@@ -9,7 +9,7 @@
 
 body {
     font-family:'Courier Prime', monospace; /* Define a fonte padrão */
-    background-color:lemonchiffon /* Define a cor de fundo */
+    background-color:rgb(191, 131, 214) /* Define a cor de fundo */
 }
 
 header {
@@ -136,6 +136,22 @@ input[type="number"] {
   color: #555;
 }
 
+.radio-group label {
+  display: inline;
+  margin-right: 10px;
+  font-weight: normal;
+}
+
+.input-check {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.input-check input[type="checkbox"] + label {
+    display: inline-block;
+    font-weight: normal;
+}
+
 textarea {
     width: 100%;
     padding: 8px;
@@ -153,7 +169,7 @@ textarea {
   }
 
   button {
-    background-color: #007bff;
+    background-color: #0056b3;
     color: white;
     border: none;
     border-radius: 4px;
@@ -163,10 +179,10 @@ textarea {
   
   /* Botão de Limpar */
   button[type="reset"] {
-    background-color: #6c757d;
+    background-color: #0056b3;
   }
   
   /* Botão de Enviar */
   button:hover {
-    background-color: #0056b3;
+    background-color: #08090a;
   }
